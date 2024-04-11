@@ -10,39 +10,57 @@
 
     body {
         background-color: #CCCCCC;
-        padding-left: 20px;
-        padding-right: 20px;
-        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #CCCCCC;
     }
 
     span{
         font-weight: 500;
     }
 
+    input{
+        width: 80%;
+        height: 20px;
+        padding: 5px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        border: 0;
+        margin: 10px;
+        margin-left: 45px;
+                
+    }
+
+    input:focus {
+       outline: none;
+       box-shadow: #631E6F;
+    }
+
     .flex-container {
         margin: auto;
         background-color: #210D25;
         background-image: linear-gradient(#210d25, #631E6F);
-        
+        width: 625px;
         display: flex;
         flex-direction: column;
         border-radius: 5px;
+        
     }
 
     .header{
         padding: 20px;
         padding-left: 10px;
         text-align: center;
-        width: 600px;
+        
         color: #F9C723;
         font-size: 28px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
         font-weight: 500;
         
     }
 
     .col{
         padding: 20px;
+        
         height: 350px;
         background-color: #631E6F;
         background-image: linear-gradient(#631e6f, #210d25);
@@ -50,11 +68,16 @@
         margin-right: 20px;
         margin-bottom: 25px;
         border-radius: 5px;
+        
+        
+    }
+
+    .title-02{
         text-align: center;
-        color: #CCCCCC;
-        font-size: 22px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+        font-size: 20px;
         font-weight: 500;
+        padding-bottom: 20px;
     }
 
     .header-subtitle{
@@ -96,10 +119,16 @@
             No final da enquete vamos sortear um <span>brinde</span> entre os participantes.
         </div>
         </div>
-        
-            <div class="col">
+        <div class="col">
+            <div class="title-02">
                 Digite os seus dados e escolha entre os três finalistas!
             </div>
+
+            <input type="text" placeholder="Digite seu nome"/>
+            <input type="email" placeholder="Digite seu email"/>
+        
+         </div>
+           
         </div>
     </div>
 </body>

@@ -3,7 +3,6 @@ body {
     background-color: #CCCCCC;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    padding: 1.2rem;
 }
 
 span{
@@ -12,11 +11,12 @@ span{
 
 input{
     width: 80%;
-    
+    height: 22px;;
     padding: 0.9rem;
     font-size: 1.2rem;
     border-radius: 0.3rem;
     border: 0;
+    
     margin: 0.9rem 1.2rem 1.2rem 1.2rem;
             
 }
@@ -45,14 +45,21 @@ button:hover{
 }
 
 .flex-container {
-   
-    background-color: #210D25;
-    background-image: linear-gradient(#210d25, #631E6F);
-    width: 40rem;
-    padding: 0.9rem 0.9rem;
+    width:600px;
+    height: fit-content;
+    
+    margin: auto;
+    
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+
+    background-color: #210D25;
+    background-image: linear-gradient(#210d25, #631E6F);
+
+    padding: 0.9rem 0.9rem;
+    padding-right: 25px;
+    border-radius: 10px;
     box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2);
     overflow: hidden;
     
@@ -70,16 +77,15 @@ button:hover{
 }
 
 .col{
-    padding: 0.5rem;
-    
-    justify-content:space-around;
-    
+    width: fit-content;
+    height: fit-content;
     background-color: #631E6F;
     background-image: linear-gradient(#631e6f, #210d25);
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
-    margin-bottom: 1.2rem;
-    border-radius: 5px;
+    
+    padding: 0.5rem;
+    
+    margin: auto;
+    border-radius: 10px;
     
     
 }
@@ -116,10 +122,11 @@ button:hover{
 }
 
 .card{
-   
+    width: fit-content;
+    box-sizing: border-box;
+    
     background-image: linear-gradient(#3F61EF, #72CBFE); 
-    width: 100%;
-    justify-content:center;
+    margin: auto;
         
     
 }
@@ -129,19 +136,25 @@ button:hover{
     border: double 8px transparent;
     background-image: linear-gradient( #2738DB, #342A89), 
     linear-gradient(to bottom, #2738DB, #342A89);
+
     background-origin: border-box;
-    background-clip: content-box, border-box; 
+    background-clip: content-box, border-box;
+     
     padding: 0.5rem 0.1rem 0.1rem 0.1rem;
+    margin: auto;
     margin: 0.6rem;
     
-    
+    justify-content: center;
 }
 
 
 .display{
+    width: 100%;
+    height: fit-content;
     flex-direction: row;
     display: flex;
-    align-items: center;
+    margin: auto;
+    row-gap: 10px;
     
 }
 
@@ -159,27 +172,37 @@ button:hover{
     }
 
     .card{
-        width: 95%;
-        padding: 0rem  0.1rem 0rem 0.7rem;
-        margin: 0.1rem 1rem 0.1rem 0.1rem;
-       
+        width: fit-content;
+        margin: auto;
+        padding-left: 15px;
+        
+                     
     }
     .display{
         flex-direction: column;
-        width: 70%;
-        margin:  1rem  3rem ;
-    }
-    .flex-container{
-        width: 95%;
-    }
-    .col{
-        width: 95%;
+        margin: auto;
         
     }
+    
+    .flex-container{
+        width: 75%;
+        margin: auto;
+        padding: 30px;
+    }
+
+    .col{
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
    .border{
-    width: 95%;
+    width: fit-content;
+    height: min-content;
+    margin: auto;
     
-    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;;
    }
 }
 
